@@ -1,0 +1,43 @@
+cells =[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']] # cells with 2 element inside a list
+cells[1][2]
+
+#print the 2 elements 
+cells =[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']] 
+for x in cells:
+    print('Elements: ', x)
+
+#to print all element in each list(nested list)
+cells =[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']] 
+for x in cells:
+    for y in x :
+        print('Elements:', y)
+
+# print tables in excel
+table =[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']] 
+for row in table:
+    for cell in row :
+        print('Elements:', cell)
+
+# to make a table representation
+table =[['A1', 'A2', 'A3'], ['B1', 'B2', 'B3']] 
+for row in table:
+    for cell in row :
+        print(cell, '', end='')
+    print()
+
+# to comprehensive list 1,2,3,4
+numbers = [[i for i in range(1, 6)] for j in range(4)]
+print(numbers)
+
+tables=[[i for i in range(1,6)] for j in range(4)]
+i = tables[0] 
+for table in i:
+    for j in i:
+        print(j, '', end= '')
+    print()   
+
+#addion and multiplication
+list_uk = ['london', 'bristol']
+list_us =['chicago', 'new york']
+list_all = list_uk + list_us
+print(list_all)
