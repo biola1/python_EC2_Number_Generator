@@ -41,3 +41,8 @@ list_uk = ['london', 'bristol']
 list_us =['chicago', 'new york']
 list_all = list_uk + list_us
 print(list_all)
+
+#how to change to capital letters
+text = 'please change me to capital'
+text_cap = text.upper()
+print(text_cap)
