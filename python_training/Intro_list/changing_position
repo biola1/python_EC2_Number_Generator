@@ -1,0 +1,31 @@
+#changing_position
+first = input('Enter the first number: ')
+second = input('Enter the second number: ')
+print('Before swapping:', first, second)
+first, second = second, first
+print('After swapping:', first, second)
+
+#top_cities
+top_cities = ['Chicago', 'Houston','Atlanta','Miami','California']
+top_cities[0], top_cities[2] = top_cities[2], top_cities[0]
+print(top_cities)
+
+#days of the week
+week_days= ['monday', 'tuesday', 'friday','thursday','wednesday']
+week_days[2], week_days[4] = week_days[4], week_days[2]
+print(week_days)
+
+#sort the alphabets
+top_cities = ['Chicago', 'Houston','Atlanta','Miami','California']
+top_cities.sort()
+print(top_cities)
+
+#sort numbers
+randon_number =[4,5,-3,8,0,1,6,7]
+randon_number.sort()
+print(randon_number)
+
+#sort high to low
+randon_number =[4,5,-3,8,0,1,6,7]
+randon_number.sort(reverse=True)
+print(randon_number)

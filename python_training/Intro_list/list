@@ -1,0 +1,71 @@
+list_cities = []
+list_cities =['Chicago', 'New York City', 'Texas', 'Houston', 'Atlanta']
+list_cities [0]
+list_cities[0:3]
+list_cities[:]
+list_cities[-4]
+list_cities[3:]
+list_cities[0:1]
+
+#delete list 
+top_cities = ['Chicago','Houston','Atlanta','Seattle','China','Ohio']
+del top_cities[4] #delete China
+print(top_cities)
+del top_cities[2:4] #delete Atlanta and Seattle
+print(top_cities)
+del top_cities [:] #delete all cities
+print(top_cities)
+del top_cities #to delete top_cities itself
+
+
+#Add list. Methods are funtions that belongs to a specific data
+ratings_list = [1, 2, 3, 4]
+ratings_list.append (5) # adds a number at the end
+print(ratings_list)
+ratings_list.insert(1, 4) #inserts a number at a particular place)
+print(ratings_list)
+del ratings_list[1] #delete 4 
+print(ratings_list)
+
+#iterating-lists
+top_cities = ['Chicago','Houston','Atlanta','Seattle','Ohio']
+for city in top_cities:
+    print('Current City:', city)
+
+#Example of iterating-list
+top_cities = ['Chicago','Houston','Atlanta','Seattle','Ohio']
+for city_index in range (len(top_cities)): #length here is used in range of the number of top city
+    print('current index', city_index, '| city index', top_cities[city_index], )
+
+
+
+#To sum up the total number in a list
+spendings = [23.4, 34.5, 45.7, 51.5, 65.2]
+sum = 0.0 # create a variable for the sum
+for spending in spendings: #iterate the spending
+    sum += spending
+print('Money Spent:', sum)
+
+
+#budget exercise
+#Helping with the Budget. John has a hard time keeping his budget. Write a program to help him analyse his spendings. You are given a list with John's spendings for each month. Go through the list, and count the number of times...
+#a. the spendings were low (< 1000.0)
+#b. the spendings were normal (between 1000.0 and 2500.0 inclusive)
+#c. the spendings were high (> 2500.0)
+#Then, print the following to the output:
+#Numbers of months with low spendings: {}, normal spendings: {}, high spendings: {}. 
+
+
+spendings = [2312.2, 3452.4, 902.3, 1523.3, 1292, 823]
+low = 0 # create a variable for the low
+normal = 0 # create a variable for the normal
+high = 0 # create a variable for the high
+for month in spendings:
+   if month < 1000.0:
+    low +=1
+   elif  month <= 2500.0:
+    normal +=1
+   else:
+         high +1
+print('Numbers of months with low spendings: ' + str(low) + ', normal spending: ' +str(normal)+', high spendings:' + str(high) + '.' )
+
