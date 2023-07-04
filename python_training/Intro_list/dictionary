@@ -1,0 +1,105 @@
+emails = {'Anne Steh': 'annesteh@gmail.com',
+           'peter frank': 'petef@gmail',
+           'jane juice': 'janej@gmail.com'}
+print(emails['Anne Steh'])           
+
+
+spanish_animals ={'dogs': 'el perro',
+                  'cat': 'el gato',
+                  'horse': 'el caballo'
+}
+print(spanish_animals['dogs'])
+
+
+#dict_operators
+grades = {} #create empty dictionary
+grades['Jane'] = 'A-'
+grades['Jude'] = 'B'
+print(grades)
+
+#to update grades
+grades['Jude'] = 'A'
+print (grades)
+
+grades.update({'Jude': 'A'})
+print(grades)
+
+#to check if a given key is preent in the dictonary
+if 'Jude' in grades:
+    print('Jude got: ',grades['Jude'])
+
+if 'Jane' in grades:
+    print('Jane got: ', grades['Jane'])
+
+#iteration in dictionary using for loop
+grades = {} #create empty dictionary
+grades['Jane'] = 'A-'
+grades['Jude'] = 'B'
+for el in grades:
+    print(el)
+#print keys 
+grades = {} #create empty dictionary
+grades['Jane'] = 'A-'
+grades['Jude'] = 'B'
+for el in grades.keys():
+    print(el)
+
+#print keys and values
+grades = {} #create empty dictionary
+grades['Jane'] = 'A-'
+grades['Jude'] = 'B'
+for person, key in grades.items():
+    print(person,'got', key)
+
+
+
+sample_dict ={
+    'mouth': 'Mund',
+    'finger': 'Finger',
+    'leg': 'Bein',
+    'hand': 'Hand',
+    'nose': 'Nase'
+}
+while True:
+    user_input=input('Enter a word in English or EXIT: ')
+    if user_input == 'EXIT':
+        break
+    if user_input in sample_dict :
+        print('Translation: ', sample_dict[user_input])
+    else:
+        print('No match! ')
+print('Bye!')
+        
+
+list_a = [1, 2, 3]
+list_b = list_a[-2:-1]
+list_c = list_a[-1:-2]
+print(list_b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
